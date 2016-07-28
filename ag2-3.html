@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+ <button ng-dblclick="Alert()">Click Here </a>
+
+</div>
+
+<script>
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope) {
+ $scope.Alert = function () {
+            alert("Welcome");
+        }
+   
+});
+</script>
+
+</body>
+</html>
